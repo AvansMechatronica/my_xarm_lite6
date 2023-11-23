@@ -28,8 +28,12 @@
   <param name="$(arg namespace)/prefix" value="$(arg prefix)" />
 
   <node if="$(arg publish_tf)" name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <!--
   <node if="$(arg use_moveit)" name="uf_ros_controller" pkg="xarm_controller" type="uf_ros_controller" args="ip=$(arg robot_ip)" ns="$(arg namespace)" respawn="false" output="screen" />
   <node unless="$(arg use_moveit)" name="uf_driver" pkg="xarm_api" ns="$(arg namespace)" type="xarm_driver_node" output="screen" />
+  -->
+  <node if="$(arg use_moveit)" name="uf_ros_controller" pkg="xarm_controller" type="uf_ros_controller" args="ip=$(arg robot_ip)" respawn="false" output="screen" />
+  <node unless="$(arg use_moveit)" name="uf_driver" pkg="xarm_api"  type="xarm_driver_node" output="screen" />
 
   <include if="$(arg show_rviz)" file="$(find xarm_description)/launch/_robot_rviz_display.launch">
     <arg name="dof" value="$(arg robot_dof)" />
