@@ -25,7 +25,7 @@
   <arg name="robot_controller_name" value="$(eval 'lite6_velo_traj_controller' if arg('velocity_control') else 'lite6_traj_controller')" />
   <remap from="/follow_joint_trajectory" to="/$(arg namespace)/$(arg robot_controller_name)/follow_joint_trajectory"/>
 
-  <include file="$(find lite6_moveit_config)/launch/moveit_rviz_common.launch">
+  <include file="$(find my_lite6_moveit_config)/launch/moveit_rviz_common.launch">
     <arg name="jnt_stat_source" value="[/$(arg namespace)/joint_states]" />
     <arg name="load_move_group" value="true" />
     <arg name="pub_tf" value="false" />

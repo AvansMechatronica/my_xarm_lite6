@@ -4,5 +4,5 @@
   	<!-- Disable the exec duration monitoring  -->
   	<param name="trajectory_execution/execution_duration_monitoring" value="false"/>
   	<!-- The rest of the params are specific to this plugin -->
-	<rosparam file="$(find lite6_moveit_config)/config/controllers.yaml"/>
+	<rosparam file="$(find my_lite6_moveit_config)/config/controllers.yaml"/>
 </launch>
