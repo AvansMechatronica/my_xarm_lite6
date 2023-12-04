@@ -1,13 +1,9 @@
 controller_list:
-  - name: fake_arm_controller
-    type: $(arg fake_execution_type)
+  - name: fake_lite6_controller
     joints:
-      - arm_joint1
-      - arm_joint2
-      - arm_joint3
-      - arm_joint4
-      - arm_joint5
-      - arm_joint6
-initial:  # Define initial robot poses.
-  - group: arm
-    pose: home
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6

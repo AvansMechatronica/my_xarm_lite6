@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="lite6_robot">
 
+  <!--
   <xacro:arg name="prefix" default="arm_"/>
   <xacro:arg name="hw_ns" default="xarm"/>
+  -->
+  <xacro:arg name="prefix" default=""/>
+  <xacro:arg name="hw_ns" default=""/>
   <xacro:arg name="limited" default="false"/>
   <xacro:arg name="effort_control" default="false"/>
   <xacro:arg name="velocity_control" default="false"/>
@@ -132,7 +136,7 @@
 
   <link name="tcp_link" />
   <joint name="tool_link" type="fixed">
-    <parent link="arm_link_eef" />
+    <parent link="link_eef" />
     <child link="tcp_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0.0 ${-pi/2} 0.0"/>
   </joint>
