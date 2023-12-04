@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="lite6_robot">
+<robot name="lite6">
   <group name="arm">
     <joint name="world_joint"/>
     <joint name="joint1"/>
