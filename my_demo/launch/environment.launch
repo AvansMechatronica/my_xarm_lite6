@@ -5,8 +5,9 @@
 
   <!-- startup ros_control for real robot -->
   <group unless="$(arg sim)">
-    <include file="$(find my_niryo_robot_bringup)/launch/moveit_multimachines.launch"/>
-    <include file="$(find my_niryo_rviz)/launch/rviz.launch"/>
+    <include file="$(find my_lite6_moveit_config)/launch/realMove_exec.launch">
+      <arg name="robot_ip" value="192.168.1.163" />
+    </include>
   </group>
 
   <!-- startup simulated (rviz)world and spawn robot-->
@@ -14,6 +15,7 @@
     <include file="$(find my_lite6_moveit_config)/launch/demo.launch"/>
   </group>
 
-  <node pkg="tf2_ros" type="static_transform_publisher" name="test_broadcaster" args="0.20 0.15 0.15 0 0 0 1 world ik_testpoint" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="test_broadcaster" args="0.0 0.15 0.15 0.929478686434 -0.367474633291 0.0298747280371 0.0118011006809
+ world ik_testpoint" />
 
 </launch>
