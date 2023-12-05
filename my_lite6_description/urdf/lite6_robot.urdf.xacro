@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="lite6">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="lite6_robot">
 
   <!--
   <xacro:arg name="prefix" default="arm_"/>
@@ -118,16 +118,38 @@
   </link>
 
   <joint name="baseplate_joint" type="fixed">
-    <origin xyz="0 0 0" />
+    <origin xyz="0 0 -0.015" />
     <parent link="world" />
     <child link="baseplate_link" />
   </joint>
 
+  <link name="mountingplate_link">
+    <visual>
+      <origin xyz="0 0 0.0" />
+      <geometry>
+        <box size="0.130 0.190 0.005" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+    <inertial>
+      <mass value="1"/>
+      <xacro:box_inertia m="1" x="0.130" y="0.190" z="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="mountingplate_joint" type="fixed">
+    <origin xyz="-0.285 0.0 0.0175" />
+    <parent link="baseplate_link" />
+    <child link="mountingplate_link" />
+  </joint>
+
+
+
   <link name="xarm_link"/>
 
   <joint name="base_plate_to_xarm_joint" type="fixed">
-    <origin xyz="-0.2 0.0 0.021" />
-    <parent link="baseplate_link" />
+    <origin xyz="-0.0 0.0 0.0025" />
+    <parent link="mountingplate_link" />
     <child link="xarm_link" />
   </joint>
 
