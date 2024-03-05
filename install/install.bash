@@ -5,5 +5,7 @@ sudo apt install ros-melodic-moveit-servo
 sudo apt install ros-melodic-moveit-visual-tools
 sudo apt install ros-melodic-ros-controllers
 
-fuel.ignitionrobotics.org
+git clone https://github.com/xArm-Developer/xarm_ros.git ../../xarm_ros --recursive
+
+#fuel.ignitionrobotics.org
 
