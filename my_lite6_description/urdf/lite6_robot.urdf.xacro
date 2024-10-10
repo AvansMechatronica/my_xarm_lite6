@@ -154,7 +154,6 @@
   </joint>
 
 
-
   <link name="xarm_link"/>
 
   <joint name="base_plate_to_xarm_joint" type="fixed">
@@ -173,5 +172,8 @@
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
 
-
+<!--
+  <xacro:include filename="$(find xarm_description)/urdf/gripper/lite_gripper.urdf.xacro" />
+  <xacro:uflite_gripper_urdf prefix="$(arg prefix)" attach_to='link_eef' />
+-->
 </robot>
