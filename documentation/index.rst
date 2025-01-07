@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to my uFactory lite6 workshop
-=====================================
+Welcome to my_uFactory lite6 workshop (ROS-Melodic versie)
+===========================================================
 
-**uFacory lite6 workshop** is een workshop voor Avans studenten die aan de slag willen met een Ufactory lite6 robot
+**uFacory lite6 workshop** is een workshop voor Avans studenten die aan de slag willen met een uFactory lite6 robot
 
 .. note::
    This project is under active development.
@@ -16,6 +16,7 @@ Welcome to my uFactory lite6 workshop
    :maxdepth: 2
    :caption: Contents:
 
+   documentation/Ufactory_Lite6_Robot_Setup.md
 
 
 Deze workshop is ontwikkeld door:
