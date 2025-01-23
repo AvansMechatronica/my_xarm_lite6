@@ -9,7 +9,7 @@ Voorafgaand aan deze setup dient het volgende geïnstalleerd te zijn:
 * ROS Base Packages
 
 *Let op: Volg nauwkeurig de instructies in de volgorde hier gegeven. Een verkeerde volgorde of het overslaan van handeling kan ervoor zorgen dat je setup van de uFactory Lite6 robot niet werkt!*
-
+## ROS Basepackages
 ## Development-computer
 
 Als in dit document gesproken wordt over een development-computer dan wordt hiermee bedoeld de laptop/computer waarop je de software in ROS ontwikkelt.
