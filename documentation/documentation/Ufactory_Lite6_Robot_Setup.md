@@ -9,7 +9,17 @@ Voorafgaand aan deze setup dient het volgende geïnstalleerd te zijn:
 * ROS Base Packages
 
 *Let op: Volg nauwkeurig de instructies in de volgorde hier gegeven. Een verkeerde volgorde of het overslaan van handeling kan ervoor zorgen dat je setup van de uFactory Lite6 robot niet werkt!*
-## ROS Basepackages
+## Installatie ROS Base Packages
+*Deze handeling is alleen nodig als je zelf ROS-melodic hebt geinstalleerd. maak je gebruik van een voorgeconfigureerde Avans image dan is deze stap niet nodig*
+
+```bash
+cd $HOME
+git clone https://github.com/AvansMechatronica/ROS1_installers.git
+cd ROS1_installers
+./install_ros_base_packages.bash
+cd ..
+rm -f -r installers
+```
 ## Development-computer
 
 Als in dit document gesproken wordt over een development-computer dan wordt hiermee bedoeld de laptop/computer waarop je de software in ROS ontwikkelt.
