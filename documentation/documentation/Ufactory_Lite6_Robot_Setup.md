@@ -35,7 +35,7 @@ Opmerking: Je kunt de packages uit de gekloonde github repository gebruiken als 
 
 ## Installeren van benodigde packages
 ```bash
-cd $HOME/ufactory_ws/src/ my_xarm_lite6/install
+cd $HOME/ufactory_ws/src/my_xarm_lite6/install
 ./install.bash
 ```
 
